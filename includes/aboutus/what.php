@@ -18,10 +18,10 @@
             <div class="col-lg-6 order-lg-1">
                 <h1 class="mb-4 animated slideInDown" style="color: #FF4B1F;">About Us</h1>
                 <p>
-                    NEA Group of Global Giants (Trademark Name), also known as The NEA Network, 
-                    is a high-growth leadership group of brands with a global mandate that focuses on 
-                    innovating Education, Healthcare, and Climate Change Programmes for lifelong enhancement 
-                    using the best Leadership Approach.
+                NEA Group of Global Giants (Trademark Name ) also known as The NEA Global Network (Common Name ) is a high growth 
+                rate leadership group of 3 brands with a global mandate that focuses on innovating Education, Healthcare & 
+                Climate Change Programmes for lifelong enhancement using best Leadership Approaches.
+                Founded by a team from Ghana, Kenya, Nigeria, South Africa.
                 </p>
             </div>
         </div>
@@ -46,20 +46,22 @@
         <div class="mb-4">
             <h3 class="text-center animated slideInDown" style="color: #FF4B1F;">What We Do</h3>
             <p>
-                The company transforms how customers in Education, Healthcare, and Climate Change access high-quality 
-                opportunities by providing market-aligned solutions to ecosystem challenges. They connect clients to a framework 
-                that prioritizes aptitude and accessibility, building support systems that enhance societal quality and excellence. 
-                Additionally, they create products that address gaps in these sectors. This approach focuses on positive disruption, 
-                systemization, and productization.
+            We revolutionize the dynamics of how to identify and how to access impactful and high-quality opportunities for our customers 
+            who are key players in Education and Healthcare Programs by giving market aligned solutions to the challenges faced in their 
+            ecosystems. This happens through connecting the clients in the niches to a sort of framework, so that their access depends on 
+            their aptitude and mindset while keeping accessibility at the core, which happens when we build support systems that enhance 
+            quality and excellence in Society resulting in achieving the threshold of acquiring high quality opportunities. Then, 
+            we create products that are missing for our key players in the areas of interest. This can be summed up as Positive disrupting, 
+            Systemizing and Productizing.
             </p>
         </div>
         <div>
             <h3 class="text-center animated slideInDown" style="color: #FF4B1F;"> How We Do It</h3>
             <p>
-                NEA Global identifies gaps in Education and Charity Foundation Areas of Focus then we co-create solutions with and 
-                beside the systems of stakeholders in the sectors by disrupting their current systems in place, providing missing 
-                products, or building new well-equipped support systems to bring top-notch excellence in the delivery aspects, 
-                which makes our clients achieve the threshold of acquiring high-quality opportunities.
+            NEA Global identifies gaps in Education and Healthcare Areas of Focus then we co-create solutions with and besides the systems of 
+            stakeholders in the Sectors by disrupting their Current Systems in place, providing missing products or building new well 
+            equipped Support systems to bring top notch excellence in the delivery aspects, which makes our clients achieve the threshold of 
+            acquiring high quality opportunities.
             </p>
         </div>
     </div>

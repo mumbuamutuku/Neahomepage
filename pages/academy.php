@@ -2,7 +2,7 @@
 
      // Include homepage sections
      $sections = [
-        'blogs/pageHeader', 'blogs/blogList',
+         'academy/banner',
      ];
 
      foreach ($sections as $section) {

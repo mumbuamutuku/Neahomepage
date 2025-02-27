@@ -68,6 +68,18 @@ class ApiService
         return ($response['statusCode'] === 200) ? $response['body'] : null;
     }
 
+      // get the recent Blogs
+      public function getRecentBlogs() {
+        $requestData = [
+            'page' => 1,
+            'items_per_page' => 3
+        ];
+        $response = $this->apiClient->post("/blog/", $requestData);
+
+        return ($response['statusCode'] === 200) ? $response['body'] : null;
+    }
+    
+
     // Fetch all active Testimonials 
     public function getActiveTestimonials($skip = 0, $limit = 3): mixed
     {

@@ -11,6 +11,7 @@ $routes = [
     'testimonials' => 'pages/testimonials.php',
     'contact' => 'pages/contact.php',
     'pioneers' => 'pages/pioneer.php',
+    'academy' => 'pages/academy.php',
 ];
 
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
@@ -26,9 +27,22 @@ $pageTitles = [
     'testimonials' => "Testimonials",
     'contact' => 'Contact Us',
     'pioneer' => 'Pioneer',
+    'academy' => 'Academy',
 ];
 
-$title = isset($pageTitles[$page]) ? "Nea Giants - " . $pageTitles[$page] : "Nea Giants";
+
+// Get the route and pagination parameters
+$route = isset($_GET['page']) ? $_GET['page'] : 'home'; 
+$paginationPage = isset($_GET['p']) ? (int)$_GET['p'] : 1; 
+
+// Set the page title
+$title = isset($pageTitles[$route]) ? "Nea Giants - " . $pageTitles[$route] : "Nea Giants";
+
+// Handle the blogs page separately for pagination
+if ($route === 'blogs') {
+    // Pass the pagination page to the blogs template
+    define('PAGINATION_PAGE', $paginationPage);
+}
 
 if (array_key_exists($page, $routes)) {
     define('LOADED_FROM_ROUTER', true); // Prevent double loading
