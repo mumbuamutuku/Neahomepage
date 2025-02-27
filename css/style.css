@@ -723,3 +723,7 @@
 .facility-item:hover * {
     color: #FFFFFF !important;
 }
+
+.blog-item:hover img {
+    transform: scale(1.1);
+}

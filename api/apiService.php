@@ -16,9 +16,9 @@ class ApiService
     public function __construct()
     {
         $this->apiClient = new ApiClient(
-           // 'https://nea-global-api-latest.onrender.com',
+            'https://nea-global-api-latest.onrender.com',
 
-            'http://127.0.0.1:8000', 
+            //'http://127.0.0.1:8000', 
             
             [
                 'Content-Type: application/json',
