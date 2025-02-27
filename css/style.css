@@ -602,3 +602,10 @@
     color: var(--primary) !important;
 }
 
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.1);
+}
