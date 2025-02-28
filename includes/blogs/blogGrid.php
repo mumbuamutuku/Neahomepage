@@ -27,7 +27,7 @@ $recentBlogsResponse = $apiService->getRecentBlogs();
 $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'] : [];
 ?>
 <!-- Blog Start -->
- <div class="container-fluid py-6 px-5">
+ <div class="container-fluid py-6 px-5" style="background-color: #f8f9fa;"> 
 
         <div class="row g-5">
             <!-- Blog list Start --> 
@@ -54,7 +54,7 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                     <div class="col-xl-6 col-lg-12 col-md-6">
                         <div class="blog-item">
                             <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="<?= htmlspecialchars($blog['post_writer_image']) ?>" 
+                            <img class="img-fluid" src="<?= htmlspecialchars($blog['banner_image']) ?>" 
                                 alt="<?= htmlspecialchars($blog['post_title']) ?>" 
                                 style="width: 550px; height: 400px; object-fit: cover; border-radius: 10px;" >
 
@@ -71,11 +71,11 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                         <span><?= $date->format('Y') ?></span>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center py-3 px-4">
-                                    <div class="d-flex mb-2">
-                                        <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i><?= htmlspecialchars($blog['post_writer_first_name']) ?> <?= htmlspecialchars($blog['post_writer_last_name']) ?></small>
-                                        <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i><?= htmlspecialchars($blog['category']) ?><</small>
+                                    <div class="d-flex mb-2 text-white">
+                                        <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i> <?= htmlspecialchars($blog['post_writer_first_name']) ?> <?= htmlspecialchars($blog['post_writer_last_name']) ?></small>
+                                        <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i><?= htmlspecialchars($blog['category']) ?></small>
                                     </div>
-                                    <a class="h4" href=""><?= htmlspecialchars($blog['post_title']) ?></a>
+                                    <a class="h4" href="route.php?page=blog&id=<?= htmlspecialchars($blog['_id']) ?>" ><?= htmlspecialchars($blog['post_title']) ?></a>
                                 </div>
                             </div>
                         </div>
@@ -156,16 +156,6 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                     <?php endforeach; ?>
                 </div>
                 <!-- Recent Post End -->
- 
-                <!-- Plain Text Start -->
-                <div>
-                    <h2 class="mb-4">Plain Text</h2>
-                    <div class="bg-secondary text-center" style="padding: 30px;">
-                        <p>Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam</p>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-                    </div>
-                </div>
-                <!-- Plain Text End -->
             </div>
             <!-- Sidebar End -->
         </div>

@@ -2,7 +2,7 @@
 
      // Include homepage sections
      $sections = [
-        'events/pageHeader', 'home/events',
+        'events/pageHeader', 'events/eventGrid',
      ];
 
      foreach ($sections as $section) {

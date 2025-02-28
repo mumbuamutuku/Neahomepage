@@ -37,13 +37,7 @@ $paginationPage = isset($_GET['p']) ? (int)$_GET['p'] : 1;
 $title = isset($pageTitles[$route]) ? "Nea Giants - " . $pageTitles[$route] : "Nea Giants";
 
 // Handle the blogs page separately for pagination
-if ($route === 'blogs') {
-    // Pass the pagination page to the blogs template
-    define('PAGINATION_PAGE', $paginationPage);
-}
-
-// Handle the blogs page separately for pagination
-if ($route === 'blogs') {
+if ($route === 'blogs' || $route === 'events') {
     // Pass the pagination page to the blogs template
     define('PAGINATION_PAGE', $paginationPage);
 }

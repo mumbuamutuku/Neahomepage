@@ -21,7 +21,7 @@ $blogs = isset($blogsResponse['data']) ? $blogsResponse['data'] : [];
                 <div class="project-item mb-5">
                     <!-- Blog Image -->
                     <div class="position-relative">
-                        <img class="img-fluid" src="<?= htmlspecialchars($blog['post_writer_image']) ?>" 
+                        <img class="img-fluid" src="<?= htmlspecialchars($blog['banner_image']) ?>" 
                             alt="<?= htmlspecialchars($blog['post_title']) ?>" 
                             style="width: 550px; height: 400px; object-fit: cover; border-radius: 10px;">
                         <div class="project-overlay">

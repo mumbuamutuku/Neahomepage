@@ -2,7 +2,10 @@
 require_once 'api/apiService.php'; 
 
 $apiService = new ApiService();
-$events = $apiService->getEvents(0, 6);
+$eventsResponse = $apiService->getAllEvents(1, 6);
+
+$events = isset($eventsResponse['data']) ? $eventsResponse['data'] : [];
+
 ?>
 
 <!-- Display the Events in HTML -->
