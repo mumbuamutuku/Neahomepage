@@ -39,7 +39,6 @@
                         <a href="route.php?page=about" class="nav-item nav-link">About Us</a>
                         <a href="route.php?page=academy" class="nav-item nav-link">Nea Academy</a>
                         <a href="route.php?page=healthcare" class="nav-item nav-link">Nea HealthCare</a>
-                        <a href="shop.neagiants.com" class="nav-item nav-link">Ecommerce</a>
                         <a href="route.php?page=blogs" class="nav-item nav-link">Blogs</a>
                         <a href="route.php?page=events" class="nav-item nav-link">Events</a>
                         <a href="route.php?page=pioneers" class="nav-item nav-link">Our Team</a>

@@ -12,6 +12,7 @@ $routes = [
     'contact' => 'pages/contact.php',
     'pioneers' => 'pages/pioneer.php',
     'academy' => 'pages/academy.php',
+    'healthcare' => 'pages/healthcare.php',
 ];
 
 $pageTitles = [
@@ -26,6 +27,7 @@ $pageTitles = [
     'contact' => 'Contact Us',
     'pioneer' => 'Pioneer',
     'academy' => 'Academy',
+    'healthcare' => 'Healthcare',
 ];
 
 

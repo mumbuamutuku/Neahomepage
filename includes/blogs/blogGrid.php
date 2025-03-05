@@ -134,7 +134,7 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                 <!-- Category Start -->
                 <div class="mb-5">
                     <h2 class="mb-4">Categories</h2>
-                    <div class="d-flex flex-column justify-content-start bg-secondary p-4">
+                    <div class="d-flex flex-column justify-content-start bg-light p-4">
                         <?php foreach ($category as $cat): ?>
                         <a class="h5 mb-3" href="#">
                             <i class="bi bi-arrow-right text-primary me-2"></i>
@@ -148,9 +148,9 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                 <div class="mb-5">
                     <h2 class="mb-4">Recent Post</h2>
                     <?php foreach ($recentBlogs as $blog): ?>
-                    <div class="d-flex mb-3">
-                        <img class="img-fluid" rc="<?= htmlspecialchars($blog['post_writer_image']) ?>" style="width: 100px; height: 100px; object-fit: cover;" alt="Blog Image">
-                        <a href="route.php?page=blog&id=<?= htmlspecialchars($blog['_id']) ?>" class="h5 d-flex align-items-center bg-secondary px-3 mb-0"><?= htmlspecialchars($blog['post_title']) ?>
+                    <div class="d-flex mb-3 bg-light p-3">
+                        <img class="img-fluid" src="<?= htmlspecialchars($blog['banner_image']) ?>" style="width: 100px; height: 100px; object-fit: cover;" alt="Blog Image">
+                        <a href="route.php?page=blog&id=<?= htmlspecialchars($blog['_id']) ?>" class="h5 d-flex align-items-center px-3 mb-0"><?= htmlspecialchars($blog['post_title']) ?>
                         </a>
                     </div>
                     <?php endforeach; ?>
