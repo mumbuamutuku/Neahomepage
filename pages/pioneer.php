@@ -1,7 +1,7 @@
 <?php
 
 $sections = [
-    'teams/pioneerPage', 'home/team',
+    'teams/pioneerPage', 'home/teamthree',
 ];
 
 foreach ($sections as $section) {

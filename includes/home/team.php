@@ -9,14 +9,16 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded overflow-hidden pb-4">
                         <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Alex Robin</h5>
-                        <span class="text-primary">Founder & CEO</span>
+                        <h5>Jacob Micah</h5>
+                        <span class="text-primary">Founder & CEO - Kenya</span>                      
                         <ul class="team-social">
                             <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
+                    </div>
+                    <div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">

@@ -34,6 +34,7 @@ $pageTitles = [
 // Get the route and pagination parameters
 $route = isset($_GET['page']) ? $_GET['page'] : 'home'; 
 $paginationPage = isset($_GET['p']) ? (int)$_GET['p'] : 1; 
+$id = isset($_GET['id']) ? $_GET['id'] : null;
 
 // Set the page title
 $title = isset($pageTitles[$route]) ? "Nea Giants - " . $pageTitles[$route] : "Nea Giants";
@@ -42,6 +43,11 @@ $title = isset($pageTitles[$route]) ? "Nea Giants - " . $pageTitles[$route] : "N
 if ($route === 'blogs' || $route === 'events') {
     // Pass the pagination page to the blogs template
     define('PAGINATION_PAGE', $paginationPage);
+}
+
+// Pass the ID to blog and event pages
+if (($route === 'blog' || $route === 'event') && $id) {
+    define('CONTENT_ID', $id);
 }
 
 // Load the appropriate page

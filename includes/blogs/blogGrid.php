@@ -8,10 +8,6 @@ $itemsPerPage = isset($_GET['size']) ? (int)$_GET['size'] : 6;
 
 $blogsResponse = $apiService->getBlogs($currentPage, $itemsPerPage, $searchQuery);
 
-//$blogsResponse = $apiService->getBlogs($currentPage, 1, $searchQuery);
-
-//$blogsResponse = $apiService->getBlogs(1, 10);
-
 // Ensure 'data' exists before using it
 $blogs = isset($blogsResponse['data']) ? $blogsResponse['data'] : [];
 $total = $blogsResponse['total'];
@@ -75,7 +71,8 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                                         <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i> <?= htmlspecialchars($blog['post_writer_first_name']) ?> <?= htmlspecialchars($blog['post_writer_last_name']) ?></small>
                                         <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i><?= htmlspecialchars($blog['category']) ?></small>
                                     </div>
-                                    <a class="h4" href="route.php?page=blog&id=<?= htmlspecialchars($blog['_id']) ?>" ><?= htmlspecialchars($blog['post_title']) ?></a>
+                                    <a class="h4" href="blog/<?php echo $blog['_id']; ?>"><?= htmlspecialchars($blog['post_title']) ?></a>
+                                    <!-- <a class="h4" href="route.php?page=blog&id=<?= htmlspecialchars($blog['_id']) ?>" ><?= htmlspecialchars($blog['post_title']) ?></a> -->
                                 </div>
                             </div>
                         </div>

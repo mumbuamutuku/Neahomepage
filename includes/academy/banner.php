@@ -3,7 +3,7 @@
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/ac-carousel-1.jpg" class="d-block w-100" alt="...">
+      <img src="img/Academy1.jpg" class="d-block w-100" alt="...">
       <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/ac-carousel-2.jpg" class="d-block w-100" alt="...">
+      <img src="img/academy2.png" class="d-block w-100" alt="...">
       <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
         <div class="container">
             <div class="row justify-content-start">
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/ac-carousel-1.jpg" class="d-block w-100" alt="...">
+      <img src="img/academy3.jpg" class="d-block w-100" alt="...">
       <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
         <div class="container">
             <div class="row justify-content-start">
@@ -90,10 +90,10 @@
                                 <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="">
                             </div>
                             <div class="col-6 text-start" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/academy5.jpg" alt="">
                             </div>
                             <div class="col-6 text-end" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/academy6.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/call-to-action.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/academy4.jpg" style="object-fit: cover;">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -201,30 +201,48 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4 academy-font">Work with Us</h1>
-                                <form id="workWithUsForm">
+                                <form id="workWithUsForm" method="POST" action="academy/workwithus.php" enctype="multipart/form-data">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" name="fullname" placeholder="Your Name">
+                                                <input type="text" class="form-control border-0" id="gname" name="fullname" placeholder="Your Name" required>
                                                 <label for="gname">Your Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" name="email" placeholder="Your Email">
+                                                <input type="email" class="form-control border-0" id="gmail" name="email" placeholder="Your Email" required>
                                                 <label for="gmail">Your Email</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" name="phone_number" placeholder="Your Mobile">
+                                                <input type="text" class="form-control border-0" id="cname" name="phone_number" placeholder="+254712345678" pattern="\+123\d{9}" title="please enter phone_number in the format +254712345678" required>
                                                 <label for="cname">Your Mobile</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" name="country" placeholder="Country">
+                                                <input type="text" class="form-control border-0" id="cage" name="country" placeholder="Country" required>
                                                 <label for="cage">Country</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="app" name="application_type" placeholder="Application Type">
+                                                <label for="mobile">Application Type</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="file" class="form-control border-0" id="resume" name="cv" placeholder="CV">
+                                                <label for="cage">Cv</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="file" class="form-control border-0" id="letter" name="cover_letter" placeholder="Cover Letter">
+                                                <label for="cage">Cover Letter</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -242,7 +260,7 @@
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/appointment.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/Contact Us4.jpg" style="object-fit: cover;">
                             </div>
                         </div>
                     </div>

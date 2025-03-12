@@ -121,33 +121,47 @@ class ApiService
     
         return ($response['statusCode'] === 200) ? $response['body'] : null;
     }
-    
     public function workWithus(array $data): mixed {
-        //error_log("📡 Sending JSON Payload: " . json_encode($data)); // Debug
     
-        $response = $this->apiClient->post('/user/web/workwithus', $data);
-        
-        error_log("🔍 Raw Response: " . print_r($response, true));
-        //error_log('Response' . $response);
-        //return ($response['statusCode'] === 200) ? $response['body'] : null;
-        // Ensure response is an array
+        $multipartData = [
+            'fullname' => $data['fullname'],
+            'email' => $data['email'],
+            'phone_number' => $data['phone_number'],
+            'country' => $data['country'],
+            'application_type' => $data['application_type'] ?? '',
+            'message' => $data['message']
+        ];
+    
+        // Handle file uploads
+        if (!empty($data['cv'])) {
+            $multipartData['cv'] = new CURLFile($data['cv'], mime_content_type($data['cv']), basename($data['cv']));
+        }
+    
+        if (!empty($data['cover_letter'])) {
+            $multipartData['cover_letter'] = new CURLFile($data['cover_letter'], mime_content_type($data['cover_letter']), basename($data['cover_letter']));
+        }
+    
+        // Send request using Multipart
+        $response = $this->apiClient->post('/user/web/work-with-us', $multipartData, true);
+    
+        error_log("🔍 Raw Response: " . json_encode($response));
+    
         if (!is_array($response)) {
-            error_log("❌ Unexpected Response Format");
+            error_log("❌ Unexpected Response Format (Expected an array)");
             return null;
         }
-
-        // Extract status code correctly
-        $statusCode = $response['body']['status_code'] ?? null; 
-        error_log("ℹ️ Extracted status_code: " . ($statusCode ?? 'NULL'));    
-
-        // Check if the status code is valid
+    
+        $statusCode = $response['body']['status_code'] ?? null;
+        error_log("ℹ️ Extracted status_code: " . ($statusCode ?? 'NULL'));
+    
         if ($statusCode === 200 || $statusCode === 201) {
-            return $response; // Return full response
+            return $response;
         } else {
             error_log("❌ API Call Failed with status code: " . ($statusCode ?? 'Unknown'));
             return null;
         }
     }
+    
 
     /**
      * Get all events from the API, with optional filtering and pagination.
@@ -173,6 +187,34 @@ class ApiService
         return ($response['statusCode'] === 200) ? $response['body'] : [];
     }
 
+    //sign up for newsletter
+    public function signUpforNewsletter($email): array
+    {
+        $payload = ["email" => $email];
     
+        $response = $this->apiClient->post("/user/web/{$email}/news/signUp", $payload);
     
+        // if (isset($response['statusCode']) && ($response['statusCode'] === 200 || $response['statusCode'] === 201)) {
+        //     return $response['body'] ?? [];
+        // }
+    
+        // return [];
+        if (isset($response['statusCode']) && ($response['statusCode'] === 200 || $response['statusCode'] === 201)) {
+            return [
+                "status_code" => $response['statusCode'],
+                "body" => $response['body'] ?? [],
+            ];
+        } elseif (isset($response['statusCode']) && $response['statusCode'] === 409) {
+            return [
+                "status_code" => 409,
+                "message" => "Email already registered"
+            ];
+        }
+
+        return [
+            "status_code" => 500,
+            "error" => "Unexpected error occurred"
+        ];
+    }
+
 }

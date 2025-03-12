@@ -10,7 +10,7 @@ class ApiClient
         $this->headers = $headers;
     }
 
-    private function request($method, $endpoint, $data = null)
+    private function request($method, $endpoint, $data = null, $isMultipart = false)
     {
         $url = $this->baseUrl . '/' . ltrim($endpoint, '/');
         $ch = curl_init();
@@ -24,7 +24,14 @@ class ApiClient
         }
 
         if ($data) {
-            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+            if ($isMultipart) {
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+            } else {
+                curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+                if (!in_array('Content-Type: application/json', $this->headers)) {
+                    $this->headers[] = 'Content-Type: application/json';
+                }
+            }
         }
 
         $response = curl_exec($ch);
@@ -36,12 +43,11 @@ class ApiClient
 
         curl_close($ch);
 
-
-    // Debug API response
-    error_log("Request: $method $url");
-    error_log("Payload: " . json_encode($data));
-    error_log("Response: $response");
-    error_log("Status Code: $httpCode");
+        // Debug API response
+        error_log("Request: $method $url");
+        error_log("Payload: " . print_r($data, true));
+        error_log("Response: $response");
+        error_log("Status Code: $httpCode");
 
         return ['statusCode' => $httpCode, 'body' => json_decode($response, true)];
     }
@@ -51,9 +57,9 @@ class ApiClient
         return $this->request('GET', $endpoint, $data);
     }
 
-    public function post($endpoint, $data)
+    public function post($endpoint, $data, $isMultipart = false)
     {
-        return $this->request('POST', $endpoint, $data);
+        return $this->request('POST', $endpoint, $data, $isMultipart);
     }
 
     public function put($endpoint, $data)

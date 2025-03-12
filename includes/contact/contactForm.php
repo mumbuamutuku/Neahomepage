@@ -65,7 +65,8 @@
                         </div>
                         <div class="ms-3">
                             <h6>Our Office</h6>
-                            <span>123 Street, New York, USA</span>
+                            <span>Delta Riverside Office Park Block 1
+                            </span>
                         </div>
                     </div>
                     <div class="d-flex border-bottom pb-3 mb-3">
@@ -74,7 +75,7 @@
                         </div>
                         <div class="ms-3">
                             <h6>Call Us</h6>
-                            <span>+012 345 67890</span>
+                            <span>+254 746 552659</span>
                         </div>
                     </div>
                     <div class="d-flex border-bottom-0 pb-3 mb-3">
@@ -83,12 +84,12 @@
                         </div>
                         <div class="ms-3">
                             <h6>Mail Us</h6>
-                            <span>info@example.com</span>
+                            <span>info@neagiants.com</span>
                         </div>
                     </div>
 
                     <iframe class="w-100 rounded"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.349987993497!2d36.78991104296935!3d-1.270472779478846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17464e5206c7%3A0x179f8be5e64d3c66!2sDelta%20Riverside%20Drive%20Office%20Park!5e0!3m2!1sen!2ske!4v1741792287503!5m2!1sen!2ske" 
                     frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
                 </div>

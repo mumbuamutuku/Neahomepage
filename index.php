@@ -10,7 +10,7 @@
     $sections = [
         'home/carousel', 'home/features', 'home/about', 
         'home/service', 'home/events', 'home/blogs', 'home/workwithus', 
-        'home/team', 'home/testimonial'
+        'home/testimonial'
     ];
 
     foreach ($sections as $section) {

@@ -2,7 +2,7 @@
     
      // Include  sections
      $sections = [
-        'teams/teamsHeader', 'home/team',
+        'teams/teamsHeader', 'home/teamthree',
      ];
 
      foreach ($sections as $section) {
