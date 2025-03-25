@@ -47,7 +47,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid header position-relative overflow-hidden p-0">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
+                <a href="index.php" class="navbar-brand p-0">
                     <!-- <h1 class="display-6 text-primary m-0">  -->
                         <!-- <i class="fas fa-envelope me-3"></i>Nea Giant HealthCare</h1> -->
                     <img src="img/mainLogo.svg" alt="Logo"> 
@@ -61,7 +61,7 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="program.html" class="nav-item nav-link">Programs</a>
                         <a href="shop.neagiants.com" class="nav-item nav-link">Shop</a>
-                        <a href="contact.html" class="nav-item nav-link">Nea Academy</a>
+                        <a href="/neagiants/academy" class="nav-item nav-link">Nea Academy</a>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                         <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Innovate for a Healthier Future</h1>
                         <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Driving healthcare innovation and climate change mitigation to uplift less privileged communities through impactful programs.</p>
-                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Involved</a>
+                        <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Involved</a>
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
                         <img src="img/hero-img-1.png" class="img-fluid w-100 h-100" alt="">
@@ -129,7 +129,7 @@
                                 <h4 class="mb-4">Centre for Human Disease Research (CHDR)</h4>
                                 <p class="mb-4">Raising awareness about critical health issues through initiatives like the Diabetes Awareness Project and Cancer Research Extension Project, in partnership with global institutions.
                                 </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
+                                <a href="program.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                                 <h4 class="mb-4">NEA Medical Camping   Program</h4>
                                 <p class="mb-4">Bringing healthcare directly to communities by treating multiple cases in rotating locations such as Nairobi, Mombasa, Kisumu, Nakuru, and beyond.
                                 </p>
-                                <a href="programs.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
+                                <a href="program.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                                 <h4 class="mb-4">NEA Health Care Support Program</h4>
                                 <p class="mb-4">Providing essential healthcare supplies like medicines, mosquito nets, and other critical items to support underprivileged communities.
                                 </p>
-                                <a href="programs" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
+                                <a href="program.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                                 <h4 class="mb-4">NEA Special Clinics Program</h4>
                                 <p class="mb-4">Offering specialized healthcare services through targeted clinics, including eye clinics, cancer screenings, ear treatments, and more.
                                 </p>
-                                <a href="programs.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
+                                <a href="program.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                                 <h4 class="mb-4">NEA Climate Change & Environment Conservation Program</h4>
                                 <p class="mb-4">Promoting sustainability through tree planting projects, environmental conservation initiatives, and awareness campaigns.
                                 </p>
-                                <a href="programs.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
+                                <a href="program.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                                 <h4 class="mb-4">NEA Health Centres </h4>
                                 <p class="mb-4">Providing affordable, subsidized healthcare services in areas like Nairobi’s Kibera and other underserved regions, ensuring direct access to our programs for registered beneficiaries.
                                 </p>
-                                <a href="programs.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
+                                <a href="program.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -286,12 +286,12 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-dark">Quick Links</h4>
-                            <a href=""> About Us</a>
-                            <a href=""> Contact Us</a>
-                            <a href=""> Shop</a>
+                            <a href="about.html" target="_blank"> About Us</a>
+                            <a href="contact.html" target="_blank"> Contact Us</a>
+                            <a href="shop.neagiants.com" target="_blank"> Shop</a>
                             <a href=""> Terms & Conditions</a>
-                            <a href=""> Our Blog & News</a>
-                            <a href=""> Support</a>
+                            <a href="/neagiants/blogs" target="_blank"> Our Blog & News</a>
+                            <a href="/neagiants/contact" target="_blank"> Support</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">

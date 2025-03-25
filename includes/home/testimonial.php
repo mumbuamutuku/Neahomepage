@@ -3,7 +3,9 @@
     require_once 'api/apiService.php'; 
 
     $apiService = new ApiService();     
-    $testimonials = $apiService->getActiveTestimonials(0, 6);
+    $testimonialsResponse = $apiService->getAllActiveTestimonials();
+    $testimonials = $testimonialsResponse['data'] ?? [];
+
 ?>
     <!-- Testimonial Start -->
     <div class="container-xxl pt-5">

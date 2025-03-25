@@ -2,7 +2,7 @@
         <!-- Team #3 Start -->
         <div class="container">
             <div class="section-title">
-                <h1>Team #3</h1>
+                <h1>Our Team</h1>
             </div>
             <div class="row">
                 <div class="column">

@@ -90,7 +90,7 @@ $recentBlogs = isset($recentBlogsResponse['data']) ? $recentBlogsResponse['data'
                                         <small class="text-uppercase me-3"><i class="fa fa-calendar-alt text-primary me-2"></i> <?= htmlspecialchars($event['location']) ?></small>
                                         <small class="text-uppercase me-3"><i class="fa fa-clock text-success me-2"></i><?= htmlspecialchars($event['time']) ?></small>
                                     </div>
-                                    <a class="h4" href="route.php?page=event&id=<?= htmlspecialchars($event['_id']) ?>" ><?= htmlspecialchars($event['name']) ?></a>
+                                    <a class="h4" href="events" ><?= htmlspecialchars($event['name']) ?></a>
                                 </div>
                             </div>
                         </div>

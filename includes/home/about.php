@@ -16,7 +16,7 @@
                         <h1 class="display-6 mb-4">NEA Network: Leading Global Innovation for a Better Tomorrow.</h1>
                         <p class="mb-4 justified-text">NEA Group of Global Giants (Trademark Name ) also known as The NEA Network is a high growth rate leadership group of brands with a global mandate that focuses on innovating Education, Healthcare and Climate Change Programmes for lifelong enhancement using best Leadership Approaches. The Network is a Nigerian-Kenyan founded and African headquartered, formed on 1st July 2022 with an intention of being the World's Transformative Change Agent and leader of positive change.</p>
                         
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="route.php?page=about">Explore More</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="about">Explore More</a>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,9 @@
 <?php
+    $sections = [
+        'service/serviceHeader', 'home/service',
+    ];
 
-$sections = [
-    'service/serviceHeader', 'home/service',
- ];
-
- foreach ($sections as $section) {
-    include "includes/$section.php";
-}
+    foreach ($sections as $section) {
+        include "includes/$section.php";
+    }
 ?>

@@ -1,6 +1,4 @@
 <?php 
-    
-     // Include  sections
      $sections = [
         'teams/teamsHeader', 'home/teamthree',
      ];

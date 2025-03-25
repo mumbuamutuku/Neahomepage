@@ -1,6 +1,4 @@
 <?php 
-
-     // Include homepage sections
      $sections = [
         'testimonials/testmonialsHeader', 'home/testimonial',
      ];

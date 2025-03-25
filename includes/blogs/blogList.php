@@ -61,7 +61,8 @@ $totalPages = ceil($totalBlogs / $itemsPerPage);
                             <p class="card-text text-muted"><?= htmlspecialchars(substr($blog['post_body'], 0, 100)) ?>...</p>
 
                             <!-- Read More Button -->
-                            <a href="route.php?page=blog&id=<?= $blog['_id'] ?>" class="btn btn-outline-primary btn-sm">
+                            <a href="blog/<?php echo $blog['_id']; ?>" class="btn btn-outline-primary btn-sm">
+                            <!-- <a href="route.php?page=blog&id=<?= $blog['_id'] ?>" class="btn btn-outline-primary btn-sm"> -->
                                 Read More <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>

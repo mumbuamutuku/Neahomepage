@@ -2,7 +2,20 @@
 require_once 'api/apiService.php';
 
 $apiService = new ApiService();
-$blogId = $_GET['id'] ?? null;
+// $blogId = $_GET['id'] ?? null;
+
+if (!defined('LOADED_FROM_ROUTER')) {
+    header("Location: ../route.php?page=404");
+    exit;
+}
+
+$blogId = defined('CONTENT_ID') ? CONTENT_ID : null;
+
+if (!$blogId) {
+    // Handle case where no ID was provided
+    header("Location: ../route.php?page=blogs");
+    exit;
+}
 
 // Fetch blog post details
 $blogsResponse = $blogId ? $apiService->getBlogById($blogId) : null;

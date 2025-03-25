@@ -21,29 +21,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Initialize the API service
     $apiService = new ApiService();
     $response = $apiService->signUpforNewsletter($data["email"]);
-    
+
     // Handle response status
     if ($response['status_code'] === 409) {
         // Email already registered
         echo json_encode([
-            "success" => false, 
-            "message" => "Email already registered", 
+            "success" => false,
+            "message" => "Email already registered",
             "status_code" => 409
         ]);
     } else if ($response['status_code'] === 200 || $response['status_code'] === 201) {
         // Successfully signed up
         echo json_encode([
-            "success" => true, 
+            "success" => true,
             "message" => "Signed up successfully!"
         ]);
     } else {
         // Generic failure
         echo json_encode([
-            "success" => false, 
+            "success" => false,
             "error" => "Failed to sign up. Please try again."
         ]);
     }
 } else {
     echo json_encode(["success" => false, "error" => "Invalid request method"]);
 }
-?>

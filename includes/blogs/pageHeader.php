@@ -4,7 +4,7 @@
             <h1 class="display-2 mb-4 animated slideInDown" style="color: #FF4B1F;">Blogs</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="route.php?page=home">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/home">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item text-primary" aria-current="page">Blogs</li>
                 </ol>

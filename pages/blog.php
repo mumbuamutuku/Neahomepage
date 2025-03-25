@@ -1,5 +1,4 @@
 <?php 
-
      $sections = [
         'blogs/singleBlogHeader', 'blogs/singleBlog'
      ];

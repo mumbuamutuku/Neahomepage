@@ -1,10 +1,9 @@
 <?php
+    $sections = [
+        'teams/pioneerPage', 'home/teamthree',
+    ];
 
-$sections = [
-    'teams/pioneerPage', 'home/teamthree',
-];
-
-foreach ($sections as $section) {
-    include "includes/$section.php";
-}
+    foreach ($sections as $section) {
+        include "includes/$section.php";
+    }
 ?>

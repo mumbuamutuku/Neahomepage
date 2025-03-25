@@ -1,9 +1,9 @@
 <?php 
+    $sections = [
+        'contact/contactForm'
+    ];
 
-$sections = [
-    'contact/contactForm'
-];
-
-foreach ($sections as $section) {
-    include "includes/$section.php";
-}
+    foreach ($sections as $section) {
+        include "includes/$section.php";
+    }   
+?>

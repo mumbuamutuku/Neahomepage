@@ -25,7 +25,7 @@ $events = isset($eventsResponse['data']) ? $eventsResponse['data'] : [];
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="<?= htmlspecialchars($event['image_url']) ?>" data-lightbox="project">
                                 <i class="fa fa-eye"></i>
                             </a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="route.php?page=event&id=<?= $event['_id'] ?>"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="events"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="p-4">

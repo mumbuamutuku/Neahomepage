@@ -8,6 +8,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <base href="/neagiants/">
+
     <!-- Favicon -->
     <link href="assets/mainLogo.svg" rel="icon">
 

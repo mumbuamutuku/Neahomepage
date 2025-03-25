@@ -1,11 +1,9 @@
-<?php 
+<?php
+   $sections = [
+      'blogs/pageHeader',
+      'blogs/blogGrid',
+   ];
 
-     // Include homepage sections
-     $sections = [
-        'blogs/pageHeader', 'blogs/blogGrid',
-     ];
-
-     foreach ($sections as $section) {
-        include "includes/$section.php";
-    }
-?>
+   foreach ($sections as $section) {
+      include "includes/$section.php";
+}

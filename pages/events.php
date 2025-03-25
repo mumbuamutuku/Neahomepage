@@ -1,6 +1,4 @@
 <?php 
-
-     // Include homepage sections
      $sections = [
         'events/pageHeader', 'events/eventGrid',
      ];

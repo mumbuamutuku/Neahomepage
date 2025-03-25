@@ -47,7 +47,7 @@ $blogs = isset($blogsResponse['data']) ? $blogsResponse['data'] : [];
                         <div class="blog-content text-dark border p-4">
                             <h5 class="mb-4"><?= htmlspecialchars($blog['post_title']) ?></h5>
                             <p class="mb-4"><?= htmlspecialchars(substr($blog['post_body'], 0, 120)) ?>...</p>
-                            <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                            <a class="btn btn-light rounded-pill py-2 px-4" href="/neagiants/blog/<?php echo $blog['_id']; ?>" target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
